@@ -33,3 +33,12 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+
+.aminal-pics {
+    max-height: 200px;
+    object-fit:contain;
+}
+
+.aminal-pics:hover {
+    cursor: pointer;
+}

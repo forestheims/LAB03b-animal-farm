@@ -9,16 +9,27 @@ const dogSound = document.getElementById('dog-noise');
 const horseSound = document.getElementById('horse-noise');
 
 catImage.addEventListener('click', () => {
-  catSound.play();
+    catSound.play();
 });
 
 dogImage.addEventListener('click', () => {
-  dogSound.play();
+    dogSound.play();
 });
 
 horseImage.addEventListener('click', () => {
-  horseSound.play();
+    horseSound.play();
 });
+
+document.addEventListener('keyup', event => {
+    if (event.key === 'c') {
+        catSound.play();
+    } else if (event.key === 'd') {
+        dogSound.play();
+    } else if (event.key === 'h') {
+        horseSound.play();
+    }
+});
+
 
 // set event listeners 
   // get user input(s)

@@ -3,7 +3,6 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: #FFFCFA;
     display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
 main {
@@ -36,9 +35,40 @@ footer {
 
 .aminal-pics {
     max-height: 200px;
-    object-fit:contain;
+    object-fit: contain;
+    border-radius: 100px;
+    margin: 50px 50px 50px;
+    border: 5px solid #A2D7D2;
+}
+
+.aminal-pics-blank {
+    text-align: center;
+    padding: 55px 30px 40px;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    border-radius: 100px;
+    margin: 50px 50px 50px;
+    border: 5px solid #A2D7D2;
 }
 
 .aminal-pics:hover {
     cursor: pointer;
+}
+
+@keyframes selectAnimal {
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+
+.selected {
+    animation-duration: 2s;
+    animation-name: selectAnimal;
 }

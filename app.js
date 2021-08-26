@@ -8,25 +8,52 @@ const catSound = document.getElementById('cat-noise');
 const dogSound = document.getElementById('dog-noise');
 const horseSound = document.getElementById('horse-noise');
 
+// cat
 catImage.addEventListener('click', () => {
     catSound.play();
+    catImage.classList.remove('selected');
+    dogImage.classList.remove('selected');
+    horseImage.classList.remove('selected');
+    catImage.classList.add('selected');
 });
 
+// dog
 dogImage.addEventListener('click', () => {
     dogSound.play();
+    catImage.classList.remove('selected');
+    dogImage.classList.remove('selected');
+    horseImage.classList.remove('selected');
+    dogImage.classList.add('selected');
 });
 
+// horse
 horseImage.addEventListener('click', () => {
     horseSound.play();
+    catImage.classList.remove('selected');
+    dogImage.classList.remove('selected');
+    horseImage.classList.remove('selected');
+    horseImage.classList.add('selected');
 });
 
 document.addEventListener('keyup', event => {
     if (event.key === 'c') {
         catSound.play();
+        catImage.classList.remove('selected');
+        dogImage.classList.remove('selected');
+        horseImage.classList.remove('selected');
+        catImage.classList.add('selected');
     } else if (event.key === 'd') {
         dogSound.play();
+        catImage.classList.remove('selected');
+        dogImage.classList.remove('selected');
+        horseImage.classList.remove('selected');
+        dogImage.classList.add('selected');
     } else if (event.key === 'h') {
         horseSound.play();
+        catImage.classList.remove('selected');
+        dogImage.classList.remove('selected');
+        horseImage.classList.remove('selected');
+        horseImage.classList.add('selected');
     }
 });
 
